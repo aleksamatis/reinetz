@@ -35,7 +35,7 @@ const totalPages = computed(() => store.postsList.pages?.total || 1);
           <img class="news-item__img" :src="item.image" />
           <h3 class="news-item__title">{{ item.title }}</h3>
           <div>{{ item.description }}</div>
-          <nuxt-link to="item.link" class="news-item__btn">Читать</nuxt-link>
+          <nuxt-link :to="item.link" class="news-item__btn">Читать</nuxt-link>
         </div>
       </div>
     </div>
